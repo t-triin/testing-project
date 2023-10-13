@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Login</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Check if the login button takes to the login page</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/
+
+ </preconds>
+										<steps>1. Click on the login button on the top of the page
+2. Verify that you are on the login page</steps>
+										<expected>After clicking on the login button, user should be taken to the login page</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2</id>
+				<title>Check if attempt to log in using wrong password gives an error</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/
+* User should have a valid user account</preconds>
+										<steps>1. Click on the login button on the top of the page
+2. Verify that you are on the login page
+3. Enter a valid e-mail address
+4. Enter a incorrect password
+5. Click on log in button</steps>
+										<expected>After entering incorrect password and clicking on log in button, user should get an error message: &quot;Oops! It seems there was an issue with your email and/or password. Please double-check your login credentials and try again.&quot;</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>Check if attempt to log in without entering password gives an error</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/</preconds>
+										<steps>1. Click on the login button on the top of the page
+2. Verify that you are on the login page
+3. Enter a valid e-mail address
+4. Click on log in button</steps>
+										<expected>After entering a valid e-mail address and clicking on log in button an error message should appear in the bottom of password field: &quot;Please fill out this field&quot;</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>Check if log in using valid credential works</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/
+* User should have a valid user account</preconds>
+										<steps>1. Click on the login button on the top of the page
+2. Verify that you are on the login page
+3. Enter a valid e-mail address
+4. Enter a correct password
+5. Click on log in button</steps>
+										<expected>After entering correct and valid login credentials, successful login function should be executed and user should be taken to account dashboard page. </expected>
+									</custom>
+							</case>
+															<case>
+				<id>C5</id>
+				<title>Check if forgotten password button takes to the page where you can reset your password</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/</preconds>
+										<steps>1. Click on the login button on the top of the page
+2. Click on forgotten password button below of the log in button</steps>
+										<expected>After clicking on forgotten password button, user should be navigated to page where it&apos;s possible to reset password</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C6</id>
+				<title>Check if create account button takes to the registration page</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/</preconds>
+										<steps>1. Click on the login button on the top of the page
+2. Click on Create an account button on below Log in button</steps>
+										<expected>After clicking on Create an account button, user should be navigated to the page where it&apos;s possible to register a new account</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Help</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C7</id>
+				<title>Check if the help button takes to the help center page</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/</preconds>
+										<steps>1. Click on Help button on the top of the page</steps>
+										<expected>After clicking on Help button, user should be navigated to Help Center page</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Search</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C8</id>
+				<title>Check if search bar is visible</title>
+												<template>Test Case (Text)</template>
+																<type>Usability</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/</preconds>
+										<steps>1. Verify that search bar is visible and accessible on the top of the page</steps>
+										<expected>The search bar is prominently visible and accessible at the top of the page, allowing users to enter search queries</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>Check if search is working for the search word “Harry Potter” when pressing enter button</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/</preconds>
+										<steps>1. Type &quot;Harry Potter&quot; on the search bar
+2. Press enter button</steps>
+										<expected>After the user types in search word &quot;Harry Potter&quot; and presses enter, search function should be executed and a page with relevant results should be presented </expected>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>Check if search is working for the search word “Harry Potter” when clicking search icon</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/</preconds>
+										<steps>1. Type &quot;Harry Potter&quot; on the search bar
+2. Click on blue search button (magnifying glass) 
+</steps>
+										<expected>After the user types in search word &quot;Harry Potter&quot; and clicks on search button, search function should be executed and a page with relevant results should be presented</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>Check if the advanced search button takes to the advanced search page</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/</preconds>
+										<steps>1. Click on the advanced search options button below the search bar</steps>
+										<expected>After clicking on advanced search options button the user should be navigated to the advanced search page</expected>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Search Results</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C12</id>
+				<title>Check if the results for search word Harry Potter are relevant and accurate</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/</preconds>
+										<steps>1. Type &quot;Harry Potter&quot; on the search bar
+2. Press enter
+3. Verify that the results are relevant and accurate</steps>
+										<expected>Upon typing &quot;Harry Potter&quot; in the search bar and pressing Enter, the search function should execute, and the displayed results should be relevant and accurate. The search results page should contain items related to &quot;Harry Potter,&quot; confirming the correct functionality of the search feature.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>Check if filtering according to price works</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/
+* User should perform a search using some search word 
+</preconds>
+										<steps>1. On the left side, move the price slider so that price range would be 0-20 pounds
+2. Click on refine button on the bottom of filters
+3. Verify that items below 20 pounds are displayed</steps>
+										<expected>After user sets certain price range and clicks on refine button, only items according to this price range should be displayed</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>Check if filtering according to format works</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/
+* User should perform a search using some search word</preconds>
+										<steps>1. On the left side click on Audio format
+2. Click on refine button on the bottom of filters
+3. Verify that only items in audio format are displayed</steps>
+										<expected>After user sets format to audio and clicks on refine button, only items in audio format should be displayed</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C15</id>
+				<title>Check if sorting according to title works</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/
+* User should perform a search using some search word</preconds>
+										<steps>1. On the upper right side of results click on the Sort by dropdown menu
+2. Choose Title (A-Z)
+3. Verify that results are sorted according to title in ascending alphabetical order</steps>
+										<expected>After choosing the sorting option &quot;Title (A-Z)&quot; from the dropdown menu, the results should be displayed in ascending alphabetical order based on the titles. Items should be sorted from A to Z, ensuring that the sorting operation is accurate and the titles are presented in the expected order.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C16</id>
+				<title>Check if sorting according to date works</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/
+* User should perform a search using some search word
+</preconds>
+										<steps>1. On the upper right side of results click on the Sort by dropdown menu
+2. Choose Date (new-old)
+3. Verify that results are sorted according to date from newest</steps>
+										<expected>After choosing the sorting option &quot;Date (new-old)&quot; from the dropdown menu, the results should be displayed in order based on the date. Items should be sorted from newest to oldest, ensuring that the sorting operation is accurate and the titles are presented in the expected order.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C17</id>
+				<title>Check if sorting according to price works</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/
+* User should perform a search using some search word</preconds>
+										<steps>1. On the upper right side of results click on the Sort by dropdown menu
+2. Choose Price (low-high)
+3. Verify that results are sorted according to price from lowest</steps>
+										<expected>After choosing the sorting option &quot;Price (low-high)&quot; from the dropdown menu, the results should be displayed in order based on the price. Items should be sorted from lowest to highest price, ensuring that the sorting operation is accurate and the titles are presented in the expected order.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Currency</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C18</id>
+				<title>Check if changing the currency from pounds to euros works</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/</preconds>
+										<steps>1. Scroll down until Bestsellers section
+2. Verify that prices are displayed in pounds
+3. Scroll up
+4. On the right upperside hover over Currency
+5. In the dropdown menu click Euro
+6. Scroll down until Bestsellers section
+7. Verify that prices are now shown in euros
+
+
+ </steps>
+										<expected>After selecting Euro as the currency and scrolling down to the Bestsellers section, the prices should be displayed in euros. The currency change should be accurately reflected throughout the website, ensuring that product prices are now shown in euros instead of pounds.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Your Basket</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C19</id>
+				<title>Check if it’s possible to add a product to the cart</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/</preconds>
+										<steps>1. Scroll down until bestsellers
+2. Pick an item
+3. Click on Add to basket button
+4. Scroll up
+5. Click on the basket
+6. Verify that selected item is in the basket</steps>
+										<expected>After clicking the &quot;Add to basket&quot; button for the selected item, navigating to the basket should show the presence of the chosen product. The selected item should be correctly displayed in the basket, confirming that the product has been successfully added.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C20</id>
+				<title>Check if hovering on the basket shows the content of the shopping basket</title>
+												<template>Test Case (Text)</template>
+																<type>Usability</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/</preconds>
+										<steps>1. Scroll down until bestsellers
+2. Pick an item
+3. Click on Add to basket button
+4. Scroll up
+5. Hover over basket
+6. Verify that selected item is shown in the basket</steps>
+										<expected>After adding an item to basket and hovering over the basket a tooltip or a small popup should appear displaying the content of the shopping basket. </expected>
+									</custom>
+							</case>
+															<case>
+				<id>C21</id>
+				<title>Check if clicking on shopping basket takes to the basket page</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/
+* Preferably there are at least one item added to the basket</preconds>
+										<steps>1. On the upper right click on the shopping basket
+2. Verify that you are on the shopping basket page
+
+</steps>
+										<expected>After clicking on the shopping basket, user should be taken to the basket page</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C22</id>
+				<title>Check if it’s possible to remove product from the basket</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/
+* There is at least one item in the shopping basket
+
+</preconds>
+										<steps>1. Click on the shopping basket
+2. Click on remove button below the item quantity
+3. Verify that the item was removed</steps>
+										<expected>After user has clicked remove item button, item should be removed from the shopping basket</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C23</id>
+				<title>Check if the total sum is correct when two or more items are added to the basket</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Navigate to the https://blackwells.co.uk/
+</preconds>
+										<steps>1. Browse the website and add at least two items to the shopping basket
+2. Click on the shopping basket to view its content
+3. Note down the prices of the individual items
+4. Calculate the total sum by adding up the prices of the items in the basket
+5. Verify that the calculated sum matches the total displayed in the shopping basket</steps>
+										<expected>The total sum displayed in the shopping basket should match the calculated total obtained by adding the prices of individual items in the basket</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C24</id>
+				<title>Check if it’s possbile to change the quantity of product in the basket</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/
+* There are at least one item added to the basket</preconds>
+										<steps>1. On the upper right click on the shopping basket
+2. Verify that it&apos;s possible to add/remove more of the same items to the basket using the up and down arrows next to the quantity number
+3. After changing the quantity click on update button below the quantity to update the cart</steps>
+										<expected>The system should allow user to modify the quantity of the selected product in the basket. After changing the quantity, the system should accurately reflect the updated quantity for the product in the basket</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C25</id>
+				<title>Check if empty basket button removes all the content from basket</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/
+* At least two different items are added on the basket</preconds>
+										<steps>1. Click on the shopping basket
+2. Click on the empty basket button
+3. Verify that all the content is removed from the basket and message &quot;You have no items in your basket...&quot; is displayed</steps>
+										<expected>After user clicks on the empty basket button, all the items should be removed from the shopping basket and message about empty cart should be present</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C26</id>
+				<title>Check if continue shopping button takes to some product category page</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/
+
+
+</preconds>
+										<steps>1. On the upper right click on the shopping basket
+2. Click on the continue shopping button on the bottom of the shopping cart
+3. Verify that you are directed to any kind of product category page within the website</steps>
+										<expected>After clicking continue shopping button, user should be navigated to product category page within the website where it&apos;s possible to keep browsing for more items.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C27</id>
+				<title>Check if changing the currency from euros to dollars works and the cart total is converted</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/
+* There is at least one item in the shopping basket</preconds>
+										<steps>1. Click on the shopping basket
+2. On the right top corner hover over the currency
+3. Change the currency from euros to dollars
+4. Verify that the prices in cart has changed and the total amount is also in dollars</steps>
+										<expected>After user changes the currency in the basket all the prices and total should be converted to chosen currency.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C28</id>
+				<title>Check if basket retains its content when user logs out and then in again</title>
+												<template>Test Case (Text)</template>
+																<type>Usability</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>* Navigate to the https://blackwells.co.uk/
+* User has a valid account and is logged in
+* At least one item is in the shopping basket</preconds>
+										<steps>1. Click on logout button on the upper side of the page
+2. Verify that user is logged out
+3. Click on login button on the upper side of the page
+4. Enter valid e-mail address and correct password
+5. Click on the log in button
+6. Click on the shopping basket button
+7. Verify that the same items are on the cart as before logging out
+
+
+
+
+ </steps>
+										<expected>After logging out and then logging back in, the user should find that the shopping basket retains its content. The same items that were in the basket before logging out should still be present after logging back in. </expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
